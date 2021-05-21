@@ -1,0 +1,54 @@
+@import "_button.scss";
+@import "_card.scss";
+@import "_navitem.scss";
+
+div {
+    padding: 1rem;
+}
+body{
+    display: inline-block;
+    background-color: #f9f9f4;
+    box-shadow: inset 1px 1px 10px 5px #DDD; 
+}
+.Nav{
+    display: inline-block;
+    position: sticky;
+    width: 100vw;
+    font-family: "Akaya Kanadaka", sans-serif;
+}
+
+.mingzhoudong{
+    padding: 50px 10vw;
+    .col-sm{
+        border-left: 1px solid #2f2f2f;
+        padding: 5vw;
+    }
+}
+
+.contact{
+    width: 90vw;
+    padding: 5vw 15vw;
+    .icon{
+        font-size: 3rem;
+        transition: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: 1s;
+        &:hover{
+            transform: scale(2.0);
+        }
+    }
+}
+
+.footer{
+    height: 200px;
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    &> * {
+         margin: auto;
+    }
+}
+
+
+
