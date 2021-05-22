@@ -4,7 +4,7 @@ import {AiOutlineLinkedin} from 'react-icons/ai'
 const Contact = () => {
     return(
        <div className='contact' id='spcontact'>
-           <AiOutlineLinkedin className='icon' />
+           <a><AiOutlineLinkedin className='icon' /></a>
        </div>      
     )
 }

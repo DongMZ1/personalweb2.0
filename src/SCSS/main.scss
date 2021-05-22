@@ -18,6 +18,9 @@ body{
 }
 
 .mingzhoudong{
+    font-family: 'Annie Use Your Telescope';
+    font-size: 1.5rem;
+    font: 700;
     padding: 50px 10vw;
     .col-sm{
         border-left: 1px solid #2f2f2f;
@@ -26,16 +29,33 @@ body{
 }
 
 .contact{
+    @keyframes moveupsidedown {
+        0%, 50%, 100% {
+          transform: translateY(0);
+        }
+        25%{
+            transform: translateY(10%); 
+        }
+        75% {
+            transform: translateY(-10%);
+        }
+      }
+    
     width: 90vw;
     padding: 5vw 15vw;
     .icon{
-        font-size: 3rem;
-        transition: transform;
+        cursor: pointer;
+        font-size: 4rem;
+        transition: all;
         transition-timing-function: ease-in-out;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         &:hover{
-            transform: scale(2.0);
+            color: blue;
+            animation: moveupsidedown 0.1s infinite;
         }
+    }
+    a {
+        text-decoration: none;
     }
 }
 
