@@ -1,24 +1,29 @@
-import logo from "./logo.svg";
+import AOS from 'aos';
 import "./SCSS/main.scss";
-import Menu from "./component/Menu";
 import Nav from "./component/Nav";
 import Contact from "./component/Contact";
 import MingzhouDong from "./component/MingzhouDong";
 import Footer from "./component/Footer";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, {useEffect} from 'react';
+import "aos/dist/aos.css";
+
 function App() {
+  useEffect(
+    ()=>{
+      AOS.init({duration: 1000});
+    },[]
+  )
+
   return (
     <>
-      <Router>
-          <Nav />
-        <Route path='/'>
-          <MingzhouDong />
-        </Route>
-        <Route path='/Contact'>
-          <Contact />
-        </Route>
-        <Footer />
-      </Router>
+      <Nav />
+      <div data-aos="zoom-in">
+      <MingzhouDong />
+      </div>
+      <div data-aos="fade-down">
+      <Contact />
+      </div>
+      <Footer />
     </>
   );
 }
