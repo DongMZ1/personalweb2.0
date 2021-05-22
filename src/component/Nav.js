@@ -1,6 +1,7 @@
 import React from "react";
 import "../SCSS/main.scss";
 import {Link} from 'react-scroll'
+import pdf from '../Resume.pdf'
 
 const Nav = () => {
   return (
@@ -11,7 +12,7 @@ const Nav = () => {
       </Link>
       
 
-      <span className="navitem_backgroundborder nav-item">Resume</span>
+      <a href={pdf} style={{textDecoration: 'none'}}><span className="navitem_backgroundborder nav-item">Resume</span></a>
 
       <Link to='spcontact' spy={true} smooth={true} duration={100} >
       <span className="navitem_backgroundborder nav-item">Contact</span>
