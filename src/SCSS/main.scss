@@ -6,6 +6,7 @@ div {
     padding: 1rem;
 }
 body{
+    width: 100%;
     display: inline-block;
     background-color: #f9f9f4;
     box-shadow: inset 1px 1px 10px 5px #DDD; 
@@ -13,7 +14,6 @@ body{
 .Nav{
     display: inline-block;
     position: sticky;
-    width: 100vw;
     font-family: "Akaya Kanadaka", sans-serif;
 }
 
@@ -41,7 +41,6 @@ body{
         }
       }
     
-    width: 90vw;
     padding: 5vw 15vw;
     .icon{
         cursor: pointer;
@@ -63,7 +62,6 @@ body{
     height: 200px;
     bottom: 0;
     position: relative;
-    width: 100vw;
     display: flex;
     &> * {
          margin: auto;
