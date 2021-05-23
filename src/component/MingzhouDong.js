@@ -24,8 +24,7 @@ const MingzhouDong = () =>{
             <Typist avgTypingDelay={0.1}>
                 <h3>Biography</h3>
                 <img src={image} atl='image' />
-                I am a graduate in Department of Computer Science at University of
-                Mcgill graduated in May, 2021.
+                I study Computer Science at University of Mcgill Faculty of Science and graduated in May, 2021.
                 </Typist> 
             </div>
 
