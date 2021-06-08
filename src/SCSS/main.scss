@@ -13,6 +13,10 @@ body{
 }
 .Nav{
     display: inline-block;
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
     position: sticky;
     font-family: "Akaya Kanadaka", sans-serif;
 }
@@ -28,7 +32,6 @@ body{
     font: 700;
     padding: 50px 10vw;
     .col-sm{
-        border-left: 1px solid #2f2f2f;
         padding: 5vw;
     }
 }
