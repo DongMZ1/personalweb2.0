@@ -6,7 +6,7 @@ import transcript from '../McgillTranscript.pdf'
 
 const Nav = () => {
   return (
-    <div className='Nav'
+    <div className='Nav py-3'
     >
       <Link to='spmingzhoudong' spy={true} smooth={true} duration={100} >
       <span className="navitem_backgroundborder">Mingzhou Dong</span>

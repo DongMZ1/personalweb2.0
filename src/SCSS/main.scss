@@ -2,9 +2,6 @@
 @import "_card.scss";
 @import "_navitem.scss";
 
-div {
-    padding: 1rem;
-}
 body{
     width: 100%;
     display: inline-block;
@@ -12,6 +9,7 @@ body{
     box-shadow: inset 1px 1px 10px 5px #DDD; 
 }
 .Nav{
+    animation: move-left 2s ease-out 1;
     display: inline-block;
     @media (max-width: 600px) {
         display: flex;
@@ -22,20 +20,43 @@ body{
 }
 
 .mingzhoudong{
+    .project-icon{
+        cursor: pointer;
+        padding: 6px 15px;
+        border-radius: 20px;
+        border: black 2px solid;
+        width: max-content;
+    }
     img{
        width: 150px;
        float: right;
        
     };
-    font-family: 'Annie Use Your Telescope';
-    font-size: 1.5rem;
+    font-family: "Akaya Kanadaka", sans-serif;
+    font-size: 20px;
     font: 700;
     padding: 50px 10vw;
-    .col-sm{
-        padding: 2vw;
-    }
+    
 }
 
+.project {
+    font-family: "Akaya Kanadaka", sans-serif;
+}
+
+.disp-flex {
+    display: flex;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+
+.z-100 {
+    z-index: 100;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
 .contact{
     @keyframes moveupsidedown {
         0%, 50%, 100% {
@@ -58,7 +79,6 @@ body{
         transition-duration: 0.5s;
         &:hover{
             color: blue;
-            animation: moveupsidedown 0.1s infinite;
         }
     }
     a {
@@ -77,5 +97,31 @@ body{
     }
 }
 
+@keyframes move-left {
+    0%{transform: translateX(-30%);}
+    100%{transform: translateX(0%);}
+}
 
+.movetransition{
+    &-enter {
+        transform: translateX(-100%);
+    }
+    &-enter-active {
+        transform: translateX(0%);
+        transition: all 1s;
+      }
+    &-exit {
+        transform: translateX(0%);
+      }
+    &-exit-active {
+        transform: translateX(100%);
+        transition: all 1s;
+    } 
+}
+
+.width {
+    &-max-content{
+        width: max-content;
+    }
+}
 
