@@ -32,11 +32,18 @@ body{
        float: right;
        
     };
+    .mern {
+        width: 80px;
+    }
     font-family: "Akaya Kanadaka", sans-serif;
     font-size: 20px;
     font: 700;
     padding: 50px 10vw;
     
+}
+
+.disp-none {
+    display: none;
 }
 
 .project {
